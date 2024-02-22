@@ -103,7 +103,13 @@
         lang_ru: lang_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp O>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp O>,
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "LANG_RU";
         };
@@ -111,7 +117,13 @@
         lang_ua: lang_ua {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp U>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "LANG_UA";
         };
@@ -119,7 +131,13 @@
         lang_en: lang_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp I>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp I>,
+                <&macro_release>,
+                <&kp LGUI>;
 
             label = "LANG_EN";
         };
