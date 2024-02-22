@@ -152,12 +152,12 @@
             label = "LANG_RU";
         };
 
-        lang_ua: lang_ru {
+        lang_ua: lang_ua {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp U>;
 
-            label = "LANG_RU";
+            label = "LANG_UA";
         };
     };
 
