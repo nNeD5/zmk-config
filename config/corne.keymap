@@ -135,6 +135,30 @@
                 <&macro_release>,
                 <&kp LGUI>;
         };
+
+        lang_en: lang_ua {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp I>;
+
+            label = "LANG_UA";
+        };
+
+        lang_ru: lang_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp O>;
+
+            label = "LANG_RU";
+        };
+
+        lang_ua: lang_ru {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_press>, <&kp LGUI>, <&macro_tap>, <&kp U>;
+
+            label = "LANG_RU";
+        };
     };
 
     keymap {
@@ -142,37 +166,37 @@
 
         default_layer {
             bindings = <
-&none  &kp Q        &kp W        &kp E           &kp R         &kp T    &kp Y  &kp U             &kp I         &kp O          &kp P           &none
-&none  &hml LCMD A  &hml RALT S  &hml LCTRL D    &hml LSHFT F  &kp G    &kp H  &hmr RSHFT J      &hmr RCTRL K  &hmr RALT L    &hmr RCMD SEMI  &none
-&none  &kp Z        &hml LALT X  &kp C           &kp V         &kp B    &kp N  &kp M             &kp COMMA     &hmr LALT DOT  &kp FSLH        &none
-                                 &mt LCTRL LBKT  &lt 1 RBKT    &lock    &lang  &lt 1 APOSTROPHE  &kp GRAVE
+&none  &kp Q        &kp W        &kp E         &kp R         &kp T          &kp Y        &kp U            &kp I               &kp O        &kp P           &none
+&none  &hml LCMD A  &hml RALT S  &hml LCTRL D  &hml LSHFT F  &kp G          &kp H        &hmr RSHFT J     &hmr RCTRL K        &hmr RALT L  &hmr RCMD SEMI  &none
+&none  &kp Z        &hml LALT X  &kp C         &kp V         &kp B          &kp N        &kp M            &kp COMMA           &kp PERIOD   &kp FSLH        &none
+                                 &lt 3 ESCAPE  &lt 2 TAB     &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &lt 3 SINGLE_QUOTE
             >;
         };
 
         lower_layer {
             bindings = <
-&none  &kp N1    &kp N2    &kp N3       &kp N4        &kp N5         &kp HOME       &none     &kp PG_UP     &kp N9           &kp N0      &none
-&none  &kp LCMD  &kp RALT  &kp LCTRL    &kp LSHFT     &none          &kp LEFT       &kp DOWN  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RCMD    &none
-&none  &none     &kp LALT  &none        &kp Y         &none          &kp END        &none     &kp PG_DN     &hmr LALT END    &caps_word  &none
-                           &lt RSE ESC  &lt LWR QUOT  &lt 2 SPACE    &mt RSHFT RET  &mo RSE   &lt LWR TAB
+&none  &kp N1     &kp N2          &kp N3            &kp N4                &kp N5                  &kp NUMBER_6           &kp NUMBER_7     &kp NUMBER_8       &kp N9           &kp N0           &none
+&none  &kp GRAVE  &kp MINUS       &kp EQUAL         &kp NON_US_BACKSLASH  &kp LEFT_SHIFT          &kp LEFT               &kp DOWN         &kp UP_ARROW       &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &none
+&none  &kp TILDE  &kp UNDERSCORE  &kp PLUS          &kp PIPE              &caps_word              &kp END                &kp PAGE_UP      &kp PAGE_DOWN      &kp END          &caps_word       &none
+                                  &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET
             >;
         };
 
         raise_layer {
             bindings = <
-&none  &kp EXCL      &kp AT        &kp HASH       &kp DLLR       &kp PRCNT    &kp EQUAL      &kp NUMBER_7         &kp NUMBER_8         &kp NUMBER_9        &kp GRAVE        &none
-&none  &hml LCMD F1  &hml RALT F2  &hml LCTRL F3  &hml LSHFT F2  &kp F5       &kp MINUS      &hmr RSHFT NUMBER_4  &hmr RCTRL NUMBER_5  &hmr RALT NUMBER_6  &hmr RCMD MINUS  &none
-&none  &kp F6        &hml LALT F7  &kp F8         &kp F11        &kp F12      &kp NUMBER_0   &kp NUMBER_1         &kp NUMBER_2         &kp NUMBER_3        &kp BSLH         &none
-                                   &lt RSE ESC    &lt 1 ENTER    &kp GRAVE    &mt RSHFT RET  &lt RSE BSPC         &lt LWR TAB
+&none  &kp EXCL  &kp AT  &kp HASH  &kp DLLR    &kp PRCNT          &kp LCTRL        &kp AMPERSAND  &kp ASTERISK  &none    &none    &none
+&none  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6             &kp F7           &kp F8         &kp F9        &kp F10  &kp F11  &none
+&none  &none     &none   &none     &none       &none              &none            &none          &none         &none    &none    &none
+                         &kp F1    &kp INSERT  &kp PRINTSCREEN    &kp PRINTSCREEN  &kp INS        &kp F12
             >;
         };
 
         adjust_layer {
             bindings = <
-&none  &bt BT_CLR    &none         &none         &none         &none           &none         &kp K_MUTE    &none  &none  &bootloader  &none
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_BRI_UP  &kp C_VOL_UP  &none  &none  &none        &none
-&none  &none         &none         &none         &none         &none           &kp C_BRI_DN  &kp C_VOL_DN  &none  &none  &none        &none
-                                   &none         &none         &none           &none         &none         &none
+&none  &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &none           &none  &lang_ua              &lang_en       &lang_ru       &bootloader  &none
+&none  &none  &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2    &none  &kp C_VOL_DN          &kp K_MUTE     &kp C_VOL_UP   &none        &none
+&none  &none  &none       &none             &none         &none           &none  &kp C_BRIGHTNESS_DEC  &kp C_BRI_MAX  &kp C_BRI_INC  &none        &none
+                          &none             &none         &none           &none  &none                 &none
             >;
         };
     };
