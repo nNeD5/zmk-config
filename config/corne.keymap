@@ -175,10 +175,10 @@
 
         adjust_layer {
             bindings = <
-&none  &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp A           &none  &lang_ua              &lang_en       &lang_ru       &bootloader  &none
+&none  &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &none           &none  &lang_ua              &lang_en       &lang_ru       &bootloader  &none
 &none  &none  &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2    &none  &kp C_VOL_DN          &kp K_MUTE     &kp C_VOL_UP   &none        &none
 &none  &none  &none       &none             &none         &none           &none  &kp C_BRIGHTNESS_DEC  &kp C_BRI_MAX  &kp C_BRI_INC  &none        &none
-                          &kp A             &none         &none           &none  &none                 &none
+                          &none             &none         &none           &none  &none                 &none
             >;
         };
     };
