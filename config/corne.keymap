@@ -71,22 +71,6 @@
 
             // <---[[left-hand keys + all homerow mods + all thumbs]]
         };
-
-        lock: lock {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LOCK";
-            #binding-cells = <0>;
-            bindings = <&lt 2 SPACE>, <&kp K_LOCK>;
-
-            tapping-term-ms = <200>;
-        };
-
-        lang: lang {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LANG";
-            #binding-cells = <0>;
-            bindings = <&lt 2 ENTER>, <&lang_m>;
-        };
     };
 
     combos {
@@ -113,29 +97,9 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     macros {
-        lang_m: lang_m {
-            compatible = "zmk,behavior-macro";
-            label = "LANG_M";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp SPACE>,
-                <&macro_release>,
-                <&kp LGUI>;
-        };
-
         lang_ru: lang_ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -193,10 +157,10 @@
 
         adjust_layer {
             bindings = <
-&none  &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &none           &none  &lang_ua              &lang_en       &lang_ru       &bootloader  &none
+&none  &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &kp A           &none  &lang_ua              &lang_en       &lang_ru       &bootloader  &none
 &none  &none  &bt BT_CLR  &bt BT_SEL 0      &bt BT_SEL 1  &bt BT_SEL 2    &none  &kp C_VOL_DN          &kp K_MUTE     &kp C_VOL_UP   &none        &none
 &none  &none  &none       &none             &none         &none           &none  &kp C_BRIGHTNESS_DEC  &kp C_BRI_MAX  &kp C_BRI_INC  &none        &none
-                          &none             &none         &none           &none  &none                 &none
+                          &kp A             &none         &none           &none  &none                 &none
             >;
         };
     };
