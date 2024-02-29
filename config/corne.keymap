@@ -23,7 +23,7 @@
 
 &lt {
     quick_tap_ms = <200>;
-    tapping-term-ms = <180>;
+    tapping-term-ms = <150>;
 };
 
 / {
