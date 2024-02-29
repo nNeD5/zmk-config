@@ -18,7 +18,7 @@
 
 &mt {
     quick-tap-ms = <180>;
-    tapping-term-ms = <250>;
+    tapping-term-ms = <150>;
 };
 
 &lt {
