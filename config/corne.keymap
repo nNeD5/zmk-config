@@ -18,12 +18,12 @@
 
 &mt {
     quick-tap-ms = <180>;
-    tapping-term-ms = <150>;
+    tapping-term-ms = <100>;
 };
 
 &lt {
     quick_tap_ms = <200>;
-    tapping-term-ms = <150>;
+    tapping-term-ms = <100>;
 };
 
 / {
