@@ -18,13 +18,13 @@
 
 &mt {
     quick-tap-ms = <180>;
-    //tapping-term-ms = <100>;
+    tapping-term-ms = <10>;
 	retro-tap;
 };
 
 &lt {
     quick_tap_ms = <180>;
-	//tapping-term-ms = <100>;
+	tapping-term-ms = <10>;
 	retro-tap;
 };
 
