@@ -76,6 +76,8 @@
             >;
 
             // <---[[left-hand keys + all homerow mods + all thumbs]]
+
+            retro-tap;
         };
     };
 
