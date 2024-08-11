@@ -86,22 +86,12 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <1 13>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <25 13>;
+            key-positions = <19 20>;
         };
 
         backspase {
             bindings = <&kp BACKSPACE>;
-            key-positions = <10 22>;
-        };
-
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <22 34>;
+            key-positions = <16 15>;
         };
     };
 
