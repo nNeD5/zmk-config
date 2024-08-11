@@ -76,11 +76,11 @@
             retro-tap;
         };
 
-        shfit_capslock: shfit_capslock {
+        shfit_capslock_lt: shfit_capslock_lt {
             compatible = "zmk,behavior-tap-dance";
-            label = "SHFIT_CAPSLOCK";
+            label = "SHFIT_CAPSLOCK_LT";
             #binding-cells = <0>;
-            bindings = <&sk LSHIFT>, <&caps_word>;
+            bindings = <&lt 1 LEFT_SHIFT>, <&caps_word>;
 
             tapping-term-ms = <180>;
         };
@@ -160,10 +160,10 @@
 
         lower_layer {
             bindings = <
-&none  &kp N1     &kp N2          &kp N3     &kp N4          &kp N5              &kp NUMBER_6          &kp NUMBER_7           &kp NUMBER_8     &kp N9           &kp N0             &none
-&none  &kp GRAVE  &kp MINUS       &kp EQUAL  &kp BACKSLASH   &kp LEFT_BRACKET    &kp LEFT              &kp DOWN               &kp UP_ARROW     &kp RIGHT_ARROW  &kp RIGHT_BRACKET  &none
-&none  &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp PIPE        &shfit_capslock     &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN    &kp END          &caps_word         &none
-                                  &kp ENTER  &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_ARROW
+&none  &kp N1     &kp N2          &kp N3     &kp N4          &kp N5                &kp NUMBER_6          &kp NUMBER_7           &kp NUMBER_8     &kp N9           &kp N0             &none
+&none  &kp GRAVE  &kp MINUS       &kp EQUAL  &kp BACKSLASH   &kp LEFT_BRACKET      &kp LEFT              &kp DOWN               &kp UP_ARROW     &kp RIGHT_ARROW  &kp RIGHT_BRACKET  &none
+&none  &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp PIPE        &shfit_capslock_lt    &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN    &kp END          &caps_word         &none
+                                  &kp ENTER  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_ARROW
             >;
         };
 
