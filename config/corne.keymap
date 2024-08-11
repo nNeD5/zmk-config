@@ -20,16 +20,12 @@
     quick-tap-ms = <180>;
 
     //tapping-term-ms = <10>;
-
-    retro-tap;
 };
 
 &lt {
     quick_tap_ms = <180>;
 
     //tapping-term-ms = <10>;
-
-    retro-tap;
 };
 
 / {
@@ -78,6 +74,15 @@
             // <---[[left-hand keys + all homerow mods + all thumbs]]
 
             retro-tap;
+        };
+
+        shfit_capslock: shfit_capslock {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHFIT_CAPSLOCK";
+            #binding-cells = <0>;
+            bindings = <&sk LSHIFT>, <&caps_word>;
+
+            tapping-term-ms = <180>;
         };
     };
 
@@ -157,7 +162,7 @@
             bindings = <
 &none  &kp N1     &kp N2          &kp N3     &kp N4          &kp N5              &kp NUMBER_6          &kp NUMBER_7           &kp NUMBER_8     &kp N9           &kp N0             &none
 &none  &kp GRAVE  &kp MINUS       &kp EQUAL  &kp BACKSLASH   &kp LEFT_BRACKET    &kp LEFT              &kp DOWN               &kp UP_ARROW     &kp RIGHT_ARROW  &kp RIGHT_BRACKET  &none
-&none  &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp PIPE        &caps_word          &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN    &kp END          &caps_word         &none
+&none  &kp TILDE  &kp UNDERSCORE  &kp PLUS   &kp PIPE        &shfit_capslock     &kp HOME              &kp PAGE_UP            &kp PAGE_DOWN    &kp END          &caps_word         &none
                                   &kp ENTER  &kp LEFT_BRACE  &kp RIGHT_BRACE     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_ARROW
             >;
         };
