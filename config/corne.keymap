@@ -107,7 +107,7 @@
 
         right_atl {
             bindings = <&sk RIGHT_ALT>;
-            key-positions = <41 39>;
+            key-positions = <39 38>;
         };
     };
 
