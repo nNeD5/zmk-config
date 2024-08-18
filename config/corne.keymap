@@ -140,10 +140,10 @@
 
         numbers {
             bindings = <
-&none  &none  &kp N1  &kp N2      &kp N3         &none          &none     &none              &none            &none  &none  &none
-&none  &none  &kp N4  &kp N5      &kp N6         &none          &none     &none              &none            &none  &none  &none
-&none  &none  &kp N7  &kp N8      &kp N9         &none          &none     &none              &none            &none  &to 0  &none
-                      &kp ESCAPE  &kp BACKSPACE  &key_repeat    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &none  &kp N1  &kp N2  &kp N3  &none     &none     &none              &none            &none  &none  &none
+&none  &none  &kp N4  &kp N5  &kp N6  &none     &none     &none              &none            &none  &none  &none
+&none  &none  &kp N7  &kp N8  &kp N9  &none     &none     &none              &none            &none  &to 0  &none
+                      &trans  &trans  &trans    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
 
             label = "num";
@@ -155,17 +155,17 @@
 &none  &kp PLUS   &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &gresc               &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &none     &none
 &none  &kp MINUS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &kp SEMI  &none
 &none  &kp EQUAL  &kp HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &to 0     &none
-                            &kp ESCAPE            &kp BACKSPACE          &key_repeat          &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+                            &trans                &trans                 &trans               &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
 
         arrows {
             label = "arr";
             bindings = <
-&none  &none  &none  &none       &none          &none          &kp HOME  &none              &none            &kp END   &none  &none
-&none  &none  &none  &none       &none          &none          &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp DOWN  &none  &none
-&none  &none  &none  &none       &none          &none          &none     &kp PAGE_UP        &kp PAGE_DOWN    &none     &to 0  &none
-                     &kp ESCAPE  &kp BACKSPACE  &key_repeat    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &none  &none  &none   &none   &none     &kp HOME  &none              &none            &kp END   &none  &none
+&none  &none  &none  &none   &none   &none     &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp DOWN  &none  &none
+&none  &none  &none  &none   &none   &none     &none     &kp PAGE_UP        &kp PAGE_DOWN    &none     &to 0  &none
+                     &trans  &trans  &trans    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
     };
