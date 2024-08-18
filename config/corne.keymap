@@ -132,8 +132,8 @@
         default_layer {
             bindings = <
 &none  &kp Q  &kp W  &kp E    &kp R      &kp T          &kp Y     &kp U              &kp I            &kp O  &kp P  &none
-&none  &kp A  &kp S  &kp D    &kp F      &kp G          &kp H     &kp J              &kp K            &kp L  &to 3  &none
-&none  &kp Z  &kp X  &kp C    &kp V      &kp B          &kp N     &kp M              &to 1            &to 2  &none  &none
+&none  &kp A  &kp S  &kp D    &kp F      &kp G          &kp H     &kp J              &kp K            &kp L  &none  &none
+&none  &kp Z  &kp X  &kp C    &kp V      &kp B          &kp N     &kp M              &to 1            &to 2  &to 3  &none
                      &kp ESC  &kp SPACE  &key_repeat    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
@@ -141,8 +141,8 @@
         numbers {
             bindings = <
 &none  &none  &kp N1  &kp N2  &kp N3  &none     &none     &none              &none            &none  &none  &none
-&none  &none  &kp N4  &kp N5  &kp N6  &none     &none     &none              &none            &none  &none  &none
-&none  &none  &kp N7  &kp N8  &kp N9  &none     &none     &none              &none            &none  &to 0  &none
+&none  &none  &kp N4  &kp N5  &kp N6  &none     &none     &none              &none            &none  &to 0  &none
+&none  &none  &kp N7  &kp N8  &kp N9  &none     &none     &none              &none            &none  &none  &none
                       &trans  &trans  &trans    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
 
@@ -152,10 +152,10 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &kp PLUS   &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &gresc               &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &none     &none
-&none  &kp MINUS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &kp SEMI  &none
-&none  &kp EQUAL  &kp HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &to 0     &none
-                            &trans                &trans                 &trans               &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &kp PLUS   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &gresc               &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &none  &none
+&none  &kp MINUS  &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &to 0  &none
+&none  &kp EQUAL  &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &none  &none
+                                 &trans                &trans                 &trans               &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
 
@@ -163,8 +163,8 @@
             label = "arr";
             bindings = <
 &none  &none  &none  &none   &none   &none     &kp HOME  &none              &none            &kp END   &none  &none
-&none  &none  &none  &none   &none   &none     &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp DOWN  &none  &none
-&none  &none  &none  &none   &none   &none     &none     &kp PAGE_UP        &kp PAGE_DOWN    &none     &to 0  &none
+&none  &none  &none  &none   &none   &none     &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp DOWN  &to 0  &none
+&none  &none  &none  &none   &none   &none     &none     &kp PAGE_UP        &kp PAGE_DOWN    &none     &none  &none
                      &trans  &trans  &trans    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
