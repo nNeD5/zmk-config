@@ -106,7 +106,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <14 13>;
+            key-positions = <13 12>;
         };
 
         caps_word {
@@ -156,7 +156,7 @@
 &none  &kp PLUS   &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &gresc               &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &none     &none
 &none  &kp MINUS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &kp SEMI  &none
 &none  &kp EQUAL  &kp HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &to 0     &none
-                            &none                 &none                  &key_repeat          &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+                            &kp ESCAPE            &kp BACKSPACE          &key_repeat          &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
 
