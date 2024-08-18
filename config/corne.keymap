@@ -185,6 +185,16 @@
             label = "num";
         };
 
+        symbols {
+            label = "sym";
+            bindings = <
+&none  &gresc             &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &none     &kp BACKSLASH      &kp SLASH         &kp PIPE    &none     &none
+&none  &kp SINGLE_QUOTE   &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none          &none     &kp CARET          &kp PERCENT       &kp DOLLAR  &kp SEMI  &none
+&none  &kp DOUBLE_QUOTES  &kp HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none          &none     &kp LESS_THAN      &kp GREATER_THAN  &none       &to 0     &none
+                                    &none                 &none                  &key_repeat    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+            >;
+        };
+
         adjust_layer {
             bindings = <
 &none  &none  &kp K_PREV  &kp K_PLAY_PAUSE  &kp K_NEXT    &none           &none  &lang_ua              &lang_en       &lang_ru       &bootloader  &none
