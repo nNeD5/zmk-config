@@ -97,7 +97,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <16 15>;
+            key-positions = <14 13>;
         };
 
         caps_word {
@@ -108,6 +108,11 @@
         right_atl {
             bindings = <&sk RIGHT_ALT>;
             key-positions = <39 38>;
+        };
+
+        space {
+            bindings = <&kp SPACE>;
+            key-positions = <16 15>;
         };
     };
 
