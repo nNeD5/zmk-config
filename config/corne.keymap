@@ -85,6 +85,15 @@
             tapping-term-ms = <150>;
             flavor = "tap-preferred";
         };
+
+        question_or_exclamation: question_or_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            label = "?/!";
+            bindings = <&kp QUESTION>, <&kp EXCL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -118,50 +127,6 @@
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
-    macros {
-        lang_ru: lang_ru {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp O>,
-                <&macro_release>,
-                <&kp LGUI>;
-
-            label = "LANG_RU";
-        };
-
-        lang_ua: lang_ua {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp U>,
-                <&macro_release>,
-                <&kp LGUI>;
-
-            label = "LANG_UA";
-        };
-
-        lang_en: lang_en {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LGUI>,
-                <&macro_tap>,
-                <&kp I>,
-                <&macro_release>,
-                <&kp LGUI>;
-
-            label = "LANG_EN";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -188,10 +153,10 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &gresc             &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &none          &none     &kp BACKSLASH      &kp SLASH         &kp PIPE    &none     &none
-&none  &kp SINGLE_QUOTE   &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none          &none     &kp CARET          &kp PERCENT       &kp DOLLAR  &kp SEMI  &none
-&none  &kp DOUBLE_QUOTES  &kp HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none          &none     &kp LESS_THAN      &kp GREATER_THAN  &none       &to 0     &none
-                                    &none                 &none                  &key_repeat    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &kp PLUS   &none     &kp LEFT_BRACE        &kp RIGHT_BRACE        &gresc               &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &none     &none
+&none  &kp MINUS  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &kp SEMI  &none
+&none  &kp EQUAL  &kp HASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &to 0     &none
+                            &none                 &none                  &key_repeat          &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
 
