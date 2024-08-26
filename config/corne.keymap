@@ -15,18 +15,6 @@
 #define RSE RAISE
 #define ADJ ADJUST
 
-&mt {
-    quick-tap-ms = <180>;
-
-    //tapping-term-ms = <10>;
-};
-
-&lt {
-    quick_tap_ms = <180>;
-
-    //tapping-term-ms = <10>;
-};
-
 / {
     behaviors {
         //                 Key positions
