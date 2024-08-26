@@ -140,9 +140,9 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &kp PLUS   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE            &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &none  &none
-&none  &kp MINUS  &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &to 0  &none
-&none  &kp EQUAL  &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &none  &none
+&none  &kp PLUS   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE            &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &none          &none
+&none  &kp MINUS  &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &to 0          &none
+&none  &kp EQUAL  &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &kp AMPERSAND  &none
                                  &trans                &trans                 &trans               &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
