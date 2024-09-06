@@ -129,7 +129,7 @@
         numbers {
             bindings = <
 &none  &kp PLUS   &kp N1  &kp N2  &kp N3  &none           &question_or_exclamation  &none              &none            &none   &none   &none
-&none  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp NUMBER_0    &kp DOT                   &none              &none            &none   &none   &none
+&none  &kp MINUS  &kp N4  &kp N5  &kp N6  &kp NUMBER_0    &kp DOT                   &none              &none            &none   &trans  &none
 &none  &kp EQUAL  &kp N7  &kp N8  &kp N9  &none           &kp COMMA                 &none              &none            &trans  &trans  &none
                           &trans  &trans  &trans          &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
@@ -140,10 +140,10 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &kp PLUS   &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE            &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &kp STAR       &none
-&none  &kp MINUS  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &kp ESCAPE     &none
-&none  &kp EQUAL  &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &kp AMPERSAND  &none
-                                 &trans                &trans                 &trans               &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &none  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp TILDE            &question_or_exclamation  &kp BACKSLASH      &kp SLASH         &kp PIPE    &kp STAR       &none
+&none  &none  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE     &kp PERIOD                &kp CARET          &kp PERCENT       &kp DOLLAR  &kp ESCAPE     &none
+&none  &none  &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES    &kp COMMA                 &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER   &kp AMPERSAND  &none
+                             &trans                &trans                 &trans               &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
 
