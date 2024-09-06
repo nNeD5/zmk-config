@@ -145,19 +145,19 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &none  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none     &none          &kp BACKSLASH      &kp SLASH         &kp PIPE           &none       &none
-&none  &none  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none     &kp DOLLAR     &kp GRAVE          &kp SQT           &kp DOUBLE_QUOTES  &kp ESCAPE  &none
-&none  &none  &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none     &kp AMPERSAND  &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER          &none       &none
-                             &trans                &trans                 &trans    &sk RGUI       &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &none        &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none     &kp AMPERSAND  &kp BACKSLASH      &kp SLASH         &kp PIPE           &none   &none
+&none  &kp AT_SIGN  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none     &kp DOLLAR     &kp GRAVE          &kp SQT           &kp DOUBLE_QUOTES  &trans  &none
+&none  &none        &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none     &none          &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER          &none   &none
+                                   &trans                &trans                 &trans    &sk RGUI       &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
 
         arrows {
             label = "arr";
             bindings = <
-&none  &none  &none  &none   &none   &none     &kp HOME  &none              &none            &kp END          &none       &none
-&none  &none  &none  &none   &none   &none     &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &kp ESCAPE  &none
-&none  &none  &none  &none   &none   &none     &none     &kp PAGE_UP        &kp PAGE_DOWN    &none            &none       &none
+&none  &none  &none  &none   &none   &none     &kp HOME  &none              &none            &kp END          &none   &none
+&none  &none  &none  &none   &none   &none     &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &trans  &none
+&none  &none  &none  &none   &none   &none     &none     &kp PAGE_UP        &kp PAGE_DOWN    &none            &none   &none
                      &trans  &trans  &trans    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
