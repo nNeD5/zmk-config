@@ -135,7 +135,7 @@
             bindings = <
 &none  &none  &kp N1  &kp N2  &kp N3  &none           &question_or_exclamation  &kp STAR           &kp SLASH        &none      &none   &none
 &none  &none  &kp N4  &kp N5  &kp N6  &kp NUMBER_0    &none                     &kp PLUS           &kp MINUS        &kp EQUAL  &trans  &none
-&none  &none  &kp N7  &kp N8  &kp N9  &none           &none                     &kp PERCENT        &kp CARET        &trans     &trans  &none
+&none  &none  &kp N7  &kp N8  &kp N9  &none           &none                     &kp PERCENT        &trans           &trans     &trans  &none
                       &trans  &trans  &trans          &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
 
@@ -145,10 +145,10 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &none        &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &none     &kp AMPERSAND  &kp BACKSLASH      &kp SLASH         &kp PIPE           &none   &none
-&none  &kp AT_SIGN  &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none     &kp DOLLAR     &kp GRAVE          &kp SQT           &kp DOUBLE_QUOTES  &trans  &none
-&none  &none        &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none     &none          &kp LESS_THAN      &kp GREATER_THAN  &kp UNDER          &none   &none
-                                   &trans                &trans                 &trans    &sk RGUI       &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &none      &kp AT_SIGN    &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &kp AMPERSAND  &kp BACKSLASH      &kp SLASH        &kp PIPE           &none   &none
+&none  &kp COLON  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE    &kp DOLLAR     &kp GRAVE          &kp SQT          &kp DOUBLE_QUOTES  &trans  &none
+&none  &none      &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none             &kp LESS_THAN  &kp GREATER_THAN   &trans           &trans             &trans  &none
+                                 &trans                &trans                 &trans            &sk RGUI       &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
 
