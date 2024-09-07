@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 #define DEFAULT 0
@@ -162,10 +163,10 @@
         arrows {
             label = "arr";
             bindings = <
-&none  &none  &none  &none   &none   &none     &kp HOME  &none              &none            &kp END          &none   &none
-&none  &none  &none  &none   &none   &none     &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &trans  &none
-&none  &none  &none  &none   &none   &none     &none     &kp PAGE_UP        &kp PAGE_DOWN    &none            &none   &none
-                     &trans  &trans  &trans    &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &bt BT_CLR_ALL  &none  &none   &none   &sys_reset    &kp HOME  &none              &none            &kp END          &none   &none
+&none  &bt BT_SEL 0    &none  &none   &none   &none         &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &trans  &none
+&none  &bt BT_DISC 0   &none  &none   &none   &none         &none     &kp PAGE_UP        &kp PAGE_DOWN    &none            &none   &none
+                              &trans  &trans  &trans        &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
     };
