@@ -17,6 +17,11 @@
 #define RSE RAISE
 #define ADJ ADJUST
 
+&lt {
+    quick-tap-ms = <200>;
+    require-prior-idle-ms = <200>;
+};
+
 / {
     behaviors {
         //                 Key positions
