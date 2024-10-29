@@ -170,5 +170,14 @@
                               &trans  &trans  &trans        &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
             >;
         };
+
+        ua_ru {
+            bindings = <
+&trans  &gresc  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans     &kp SEMICOLON     &kp SINGLE_QUOTE   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp COMMA  &kp DOT           &trans             &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };
