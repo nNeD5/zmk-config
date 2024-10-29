@@ -94,6 +94,8 @@
             label = "TO_LAYERS_1_3";
             #binding-cells = <0>;
             bindings = <&to 1>, <&to 3>;
+
+            tapping-term-ms = <350>;
         };
     };
 
