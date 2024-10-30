@@ -136,16 +136,16 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     macros {
-        Cyrillic_letter_compose: Cyrillic_x {
+        Cyrillic_letter_compose: Cyrillic {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&macro_press>,
-                <&kp K_CONTEXT_MENU>,
-                <&macro_tap>,
-                <&macro_param_1to1 &kp MACRO_PLACEHOLDER>,
+                <&macro_press &kp K_CONTEXT_MENU>,
+                <&macro_param_1to1>,
+                <&macro_tap &kp MACRO_PLACEHOLDER>,
+                <&macro_release &kp K_CONTEXT_MENU>;
 
-            label = "CYRILLIC_X";
+            label = "CYRILLIC";
         };
     };
 
