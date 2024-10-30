@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings = <&to 1>, <&to 3>;
 
-            tapping-term-ms = <350>;
+            tapping-term-ms = <425>;
         };
     };
 
@@ -140,10 +140,12 @@
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings =
-                <&macro_press &kp K_CONTEXT_MENU>,
-                <&macro_param_1to1>,
-                <&macro_tap &kp MACRO_PLACEHOLDER>,
-                <&macro_release &kp K_CONTEXT_MENU>;
+                <&macro_press>,
+                <&kp K_CONTEXT_MENU &macro_param_1to1>,
+                <&macro_tap>,
+                <&kp MACRO_PLACEHOLDER>,
+                <&macro_release>,
+                <&kp K_CONTEXT_MENU>;
 
             label = "CYRILLIC";
         };
@@ -192,10 +194,10 @@
             >;
         };
 
-        ua_ru {
+        ua_ru_pair_with_xkb {
             bindings = <
 &trans  &gresc  &trans  &trans  &trans  &trans    &trans  &trans  &trans                      &Cyrillic_letter_compose X  &Cyrillic_letter_compose I  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                      &Cyrillic_letter_compose J  &Cyrillic_letter_compose E  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &Cyrillic_letter_compose J  &Cyrillic_letter_compose E  &trans                      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &Cyrillic_letter_compose B  &Cyrillic_letter_compose U  &trans                      &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
