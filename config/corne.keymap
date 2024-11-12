@@ -159,16 +159,16 @@
 &none  &kp Q  &kp W  &kp E            &kp R              &kp T       &kp Y      &kp U  &kp I           &kp O       &kp P                     &none
 &none  &kp A  &kp S  &kp D            &lt 4 F            &kp G       &kp H      &kp J  &kp K           &kp L       &kp ESCAPE                &none
 &none  &kp Z  &kp X  &kp C            &kp V              &kp B       &kp N      &kp M  &kp COMMA       &kp PERIOD  &question_or_exclamation  &none
-                     &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &kp RGUI    &sk SPACE  &to 0  &to_layers_1_3
+                     &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &sk RGUI    &sk SPACE  &to 0  &to_layers_1_3
             >;
         };
 
         numbers {
             bindings = <
-&none  &none  &kp N1  &kp N2  &kp N3  &none           &question_or_exclamation  &kp STAR           &kp SLASH        &none      &none   &none
-&none  &none  &kp N4  &kp N5  &kp N6  &kp NUMBER_0    &kp CARET                 &kp PLUS           &kp MINUS        &kp EQUAL  &trans  &none
-&none  &none  &kp N7  &kp N8  &kp N9  &none           &none                     &kp PERCENT        &trans           &trans     &trans  &none
-                      &trans  &trans  &trans          &sk RGUI                  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &none  &kp N1  &kp N2  &kp N3  &none           &question_or_exclamation  &kp STAR     &kp SLASH  &none      &none   &none
+&none  &none  &kp N4  &kp N5  &kp N6  &kp NUMBER_0    &kp CARET                 &kp PLUS     &kp MINUS  &kp EQUAL  &trans  &none
+&none  &none  &kp N7  &kp N8  &kp N9  &none           &none                     &kp PERCENT  &trans     &trans     &trans  &none
+                      &trans  &trans  &trans          &trans                    &trans       &trans
             >;
 
             label = "num";
@@ -177,20 +177,20 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &none      &kp AT_SIGN    &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &kp AMPERSAND  &kp BACKSLASH      &kp SLASH        &kp PIPE           &none   &none
-&none  &kp COLON  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE    &kp DOLLAR     &kp GRAVE          &kp SQT          &kp DOUBLE_QUOTES  &trans  &none
-&none  &none      &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none             &kp LESS_THAN  &kp GREATER_THAN   &trans           &trans             &trans  &none
-                                 &trans                &trans                 &trans            &sk RGUI       &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &none      &kp AT_SIGN    &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &kp AMPERSAND  &kp BACKSLASH     &kp SLASH  &kp PIPE           &none   &none
+&none  &kp COLON  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE    &kp DOLLAR     &kp GRAVE         &kp SQT    &kp DOUBLE_QUOTES  &trans  &none
+&none  &none      &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none             &kp LESS_THAN  &kp GREATER_THAN  &trans     &trans             &trans  &none
+                                 &trans                &trans                 &trans            &trans         &trans            &trans
             >;
         };
 
         arrows {
             label = "arr";
             bindings = <
-&none  &bt BT_CLR_ALL  &none  &none   &none   &sys_reset    &kp HOME  &kp PG_UP          &kp PAGE_DOWN    &kp END          &none   &none
-&none  &bt BT_SEL 0    &none  &none   &none   &none         &kp LEFT  &kp DOWN_ARROW     &kp UP_ARROW     &kp RIGHT_ARROW  &trans  &none
-&none  &bt BT_DISC 0   &none  &none   &none   &none         &none     &kp PAGE_UP        &kp PAGE_DOWN    &none            &none   &none
-                              &trans  &trans  &trans        &sk RGUI  &sk RIGHT_CONTROL  &sk RIGHT_SHIFT
+&none  &bt BT_CLR_ALL  &none  &none   &none   &sys_reset    &kp HOME  &kp PG_UP       &kp PAGE_DOWN  &kp END          &none   &none
+&none  &bt BT_SEL 0    &none  &none   &none   &none         &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &none
+&none  &bt BT_DISC 0   &none  &none   &none   &none         &none     &kp PAGE_UP     &kp PAGE_DOWN  &none            &none   &none
+                              &trans  &trans  &trans        &trans    &trans          &trans
             >;
         };
 
