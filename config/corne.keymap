@@ -88,15 +88,6 @@
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
         };
-
-        to_layers_1_3: to_layers_1_3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TO_LAYERS_1_3";
-            #binding-cells = <0>;
-            bindings = <&to 1>, <&to 3>;
-
-            tapping-term-ms = <425>;
-        };
     };
 
     combos {
@@ -131,6 +122,11 @@
             bindings = <&to 2>;
             key-positions = <37 40>;
         };
+
+        layer_3 {
+            bindings = <&to 3>;
+            key-positions = <37 16 19>;
+        };
     };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
@@ -156,10 +152,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q  &kp W  &kp E            &kp R              &kp T       &kp Y      &kp U  &kp I           &kp O       &kp P                     &none
-&none  &kp A  &kp S  &kp D            &lt 4 F            &kp G       &kp H      &kp J  &kp K           &kp L       &kp ESCAPE                &none
-&none  &kp Z  &kp X  &kp C            &kp V              &kp B       &kp N      &kp M  &kp COMMA       &kp PERIOD  &question_or_exclamation  &none
-                     &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &sk RGUI    &kp SPACE  &to 0  &to_layers_1_3
+&none  &kp Q  &kp W  &kp E            &kp R              &kp T       &kp Y  &kp U      &kp I      &kp O       &kp P                     &none
+&none  &kp A  &kp S  &kp D            &lt 4 F            &kp G       &kp H  &kp J      &kp K      &kp L       &kp ESCAPE                &none
+&none  &kp Z  &kp X  &kp C            &kp V              &kp B       &kp N  &kp M      &kp COMMA  &kp PERIOD  &question_or_exclamation  &none
+                     &sk RIGHT_SHIFT  &sk RIGHT_CONTROL  &sk RGUI    &to 0  &kp SPACE  &to 1
             >;
         };
 
