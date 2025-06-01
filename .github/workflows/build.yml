@@ -54,7 +54,7 @@ jobs:
           path: |
             modules/
             tools/
-            zephyr/
+            # zephyr/
             bootloader/
             zmk/
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('manifest-dir/west.yml') }}
@@ -66,8 +66,8 @@ jobs:
         run: west init -l config
       - name: West Update
         run: west update
-      - name: West Zephyr export
-        run: west zephyr-export
+      # - name: West Zephyr export
+      #   run: west zephyr-export
       - name: West Build (${{ steps.variables.outputs.display-name }})
         run: |
           west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG=${GITHUB_WORKSPACE}/config ${{ steps.variables.outputs.extra-cmake-args }} ${{ matrix.cmake-args }}
