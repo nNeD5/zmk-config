@@ -100,7 +100,7 @@
 
         backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <13 14 15>;
+            key-positions = <14 15 16>;
         };
 
         caps_word {
