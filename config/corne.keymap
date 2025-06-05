@@ -188,10 +188,10 @@
         arrows {
             label = "arr";
             bindings = <
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F10    &kp HOME  &kp PG_UP       &kp PAGE_DOWN  &kp END          &none   &none
-&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &none
-&none  &none  &kp F7  &kp F8  &kp F9  &kp F12    &kp DEL   &kp PAGE_UP     &kp PAGE_DOWN  &none            &none   &none
-                      &trans  &trans  &trans     &trans    &trans          &trans
+&none  &kp C_VOLUME_UP    &kp F1  &kp F2  &kp F3  &kp F10    &kp HOME  &kp PG_UP       &kp PAGE_DOWN  &kp END          &kp PAUSE_BREAK  &none
+&none  &kp K_MUTE         &kp F4  &kp F5  &kp F6  &kp F11    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans           &none
+&none  &kp C_VOLUME_DOWN  &kp F7  &kp F8  &kp F9  &kp F12    &kp DEL   &kp PAGE_UP     &kp PAGE_DOWN  &kp K_PREV       &kp K_NEXT       &none
+                                  &trans  &trans  &trans     &trans    &trans          &trans
             >;
         };
 
