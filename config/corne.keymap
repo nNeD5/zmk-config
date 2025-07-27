@@ -108,7 +108,7 @@
             key-positions = <36 41>;
         };
 
-        numbers {
+        layer_1 {
             bindings = <&to 1>;
             key-positions = <39 38>;
         };
