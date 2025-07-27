@@ -157,10 +157,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q              &kp W            &kp E                &kp R            &kp T       &kp Y              &kp U      &kp I         &kp O       &kp P                     &none
-&none  &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F  &lt 4 G     &kp H              &kp J      &kp K         &kp L       &kp ESCAPE                &none
-&none  &kp Z              &kp X            &kp C                &kp V            &kp B       &kp N              &kp M      &kp COMMA     &kp PERIOD  &question_or_exclamation  &none
-                                           &sk RIGHT_SHIFT      &to 0            &sk RGUI    &sk RIGHT_CONTROL  &kp SPACE  &sk LEFT_ALT
+&none  &kp Q              &kp W            &kp E                &kp R            &kp T       &kp Y              &kp U             &kp I                 &kp O             &kp P                       &none
+&none  &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F  &lt 4 G     &kp H              &hmr RIGHT_GUI J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_SHIFT SEMICOLON  &none
+&none  &kp Z              &kp X            &kp C                &kp V            &kp B       &kp N              &kp M             &kp COMMA             &kp PERIOD        &question_or_exclamation    &none
+                                           &sk RIGHT_SHIFT      &to 0            &sk RGUI    &sk RIGHT_CONTROL  &kp SPACE         &sk LEFT_ALT
             >;
         };
 
@@ -198,7 +198,7 @@
         ua_ru_pair_with_xkb {
             bindings = <
 &trans  &gresc  &trans  &trans  &trans  &trans    &trans  &trans  &trans                      &Cyrillic_letter_compose X  &Cyrillic_letter_compose I  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &Cyrillic_letter_compose J  &Cyrillic_letter_compose E  &trans                      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                      &Cyrillic_letter_compose E  &trans                      &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &Cyrillic_letter_compose B  &Cyrillic_letter_compose U  &trans                      &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
