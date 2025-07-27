@@ -98,11 +98,6 @@
             key-positions = <19 20 21>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <14 15 16>;
-        };
-
         caps_word {
             bindings = <&caps_word>;
             key-positions = <36 41>;
@@ -126,11 +121,6 @@
         to_config {
             bindings = <&to 5>;
             key-positions = <38 36 37>;
-        };
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <2 3 4>;
         };
     };
 
@@ -160,16 +150,16 @@
 &none  &kp Q              &kp W            &kp E                &kp R            &kp T      &kp Y    &kp U             &kp I                 &kp O             &kp P                       &none
 &none  &hml LEFT_SHIFT A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_GUI F  &lt 4 G    &kp H    &hmr RIGHT_GUI J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_SHIFT SEMICOLON  &none
 &none  &kp Z              &kp X            &kp C                &kp V            &kp B      &kp N    &kp M             &kp COMMA             &kp PERIOD        &question_or_exclamation    &none
-                                           &to 3                &to 0            &kp TAB    &kp ESC  &kp SPACE         &to 1
+                                           &kp BACKSPACE        &to 0            &kp TAB    &kp ESC  &kp SPACE         &to 1
             >;
         };
 
         numbers {
             bindings = <
-&none  &kp BACKSPACE  &kp N1  &kp N2  &kp N3  &none           &question_or_exclamation  &kp STAR     &kp SLASH  &none      &none   &none
-&none  &kp TAB        &kp N4  &kp N5  &kp N6  &kp NUMBER_0    &kp CARET                 &kp PLUS     &kp MINUS  &kp EQUAL  &trans  &none
-&none  &trans         &kp N7  &kp N8  &kp N9  &none           &none                     &kp PERCENT  &trans     &trans     &trans  &none
-                              &trans  &trans  &trans          &trans                    &trans       &trans
+&none  &kp BACKSPACE        &kp N1                  &kp N2                &kp N3                  &none           &question_or_exclamation  &kp STAR             &kp SLASH                 &none                 &none   &none
+&none  &hml LEFT_SHIFT TAB  &hml LEFT_ALT NUMBER_4  &hml LEFT_CONTROL N5  &hml LEFT_GUI NUMBER_6  &kp NUMBER_0    &kp CARET                 &hmr RIGHT_GUI PLUS  &hmr RIGHT_CONTROL MINUS  &hmr RIGHT_ALT EQUAL  &trans  &none
+&none  &trans               &kp N7                  &kp N8                &kp N9                  &none           &none                     &kp PERCENT          &trans                    &trans                &trans  &none
+                                                    &trans                &trans                  &trans          &trans                    &trans               &trans
             >;
 
             label = "num";
@@ -178,20 +168,20 @@
         symbols {
             label = "sym";
             bindings = <
-&none  &none      &kp AT_SIGN    &kp LEFT_BRACE        &kp RIGHT_BRACE        &none             &kp AMPERSAND  &kp BACKSLASH     &kp SLASH  &kp PIPE           &none   &none
-&none  &kp COLON  &kp SEMICOLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE    &kp DOLLAR     &kp GRAVE         &kp SQT    &kp DOUBLE_QUOTES  &trans  &none
-&none  &none      &kp HASH       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none             &kp LESS_THAN  &kp GREATER_THAN  &trans     &trans             &trans  &none
-                                 &trans                &trans                 &trans            &trans         &trans            &trans
+&none  &none   &kp AT_SIGN  &kp LEFT_BRACE                      &kp RIGHT_BRACE                  &none             &kp AMPERSAND  &kp BACKSLASH        &kp SLASH              &kp PIPE                     &none   &none
+&none  &trans  &trans       &hmr LEFT_CONTROL LEFT_PARENTHESIS  &hml LEFT_GUI RIGHT_PARENTHESIS  &kp UNDERSCORE    &kp DOLLAR     &hmr LEFT_GUI GRAVE  &hmr LEFT_CONTROL SQT  &hmr LEFT_ALT DOUBLE_QUOTES  &trans  &none
+&none  &none   &kp HASH     &kp LEFT_BRACKET                    &kp RIGHT_BRACKET                &none             &kp LESS_THAN  &kp GREATER_THAN     &trans                 &trans                       &trans  &none
+                            &trans                              &trans                           &trans            &trans         &trans               &trans
             >;
         };
 
         arrows {
             label = "arr";
             bindings = <
-&none  &kp C_VOLUME_UP    &kp F1  &kp F2  &kp F3  &kp F10    &kp HOME  &kp PG_UP       &kp PAGE_DOWN  &kp END          &kp K_PLAY_PAUSE  &none
-&none  &kp K_MUTE         &kp F4  &kp F5  &kp F6  &kp F11    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans            &none
-&none  &kp C_VOLUME_DOWN  &kp F7  &kp F8  &kp F9  &kp F12    &kp DEL   &kp PAGE_UP     &kp PAGE_DOWN  &kp K_PREV       &kp K_NEXT        &none
-                                  &trans  &trans  &trans     &trans    &trans          &trans
+&none  &kp C_VOLUME_UP    &kp F1            &kp F2                &kp F3            &kp F10    &kp HOME  &kp PG_UP       &kp PAGE_DOWN  &kp END          &kp K_PLAY_PAUSE  &none
+&none  &kp K_MUTE         &hmr LEFT_ALT F4  &hml LEFT_CONTROL F5  &hml LEFT_GUI F6  &kp F11    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans            &none
+&none  &kp C_VOLUME_DOWN  &kp F7            &kp F8                &kp F9            &kp F12    &kp DEL   &kp PAGE_UP     &kp PAGE_DOWN  &kp K_PREV       &kp K_NEXT        &none
+                                            &trans                &trans            &trans     &trans    &trans          &trans
             >;
         };
 
