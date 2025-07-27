@@ -123,7 +123,7 @@
             key-positions = <37 20>;
         };
 
-        to_conifg {
+        to_config {
             bindings = <&to 5>;
             key-positions = <38 36 37>;
         };
