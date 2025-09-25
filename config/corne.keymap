@@ -188,7 +188,7 @@
         ua_ru_pair_with_xkb {
             bindings = <
 &trans  &gresc  &trans  &trans  &trans  &trans    &trans  &trans  &trans                      &Cyrillic_letter_compose X  &Cyrillic_letter_compose I  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                      &Cyrillic_letter_compose E  &Cyrillic_letter_compose J  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans                      &Cyrillic_letter_compose J  &Cyrillic_letter_compose E  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &Cyrillic_letter_compose B  &Cyrillic_letter_compose U  &trans                      &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
