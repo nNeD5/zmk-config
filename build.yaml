@@ -19,9 +19,9 @@
 #
 ---
 include:
-  - board: mikoto//zmk
-    shield: corne_left
   - board: nrfmicro/nrf52840/zmk
+    shield: corne_left
+  - board: mikoto//zmk
     shield: corne_right
   - board: nrfmicro/nrf52840/zmk
     shield: settings_reset
